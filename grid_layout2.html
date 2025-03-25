@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar CSS grid box 2</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 10px 500px 20px 10px;
+            grid-gap: 5px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tampilan:</h1>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+    
+    <b>Kesimpulan skenario:</b> memanipulasi grid template dapat mengubah posisi dan 
+    lebar box dalam satu kolom ataupun row (saat gunakan row)
+</body>
+</html>
