@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar Flex Box</title>
+        <style>
+            .wadah_flex {
+                display: flex;
+                background-color: lightblue;
+                flex-flow: row wrap-reverse;
+                justify-content: center;
+            }
+            .wadah_flex > div {
+                background-color: rgb(8, 88, 153);
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wadah_flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            
+        </div>
+    </body>
+    <p>Kesimpulan skenario 1 adalah: dengan kode diatas, box flex
+        hanya menampilkan background nya dan apa yang dilist "1,2,3"
+        tanpa adanya box
+    </p>
+    <p>Kesimpulan skenario 2 adalah: dengan penambahan style pada
+        kelas anak dari div sebelumnya, skrng terdapat box yang mewadahi 
+        angka angka tadi, dan tampilan box dan font yg didiv kelas induk
+        dapat kita modif
+    </p>
+    <p>Kesimpulan skenario 3 adalah: pada skenario kali ini terdapat penambahan
+        kode flex-direction yang mengubah arah bagaimana box akan tertata, menggunakan
+        column karena kolom mengarah ke bawah atau vertikal
+    </p>
+    <p>Kesimpulan skenario 4 adalah: pada properti flex saat diganti dengan wrap, menyebabkan
+        box yang menjadi sub class dirangkai hanya didalam kelas induk
+    </p>
+    <p>Kesimpulan skenario 5 adalah: dengan penggunaan flex flex-flow dapat
+        menggabungkan dua fungsi untuk membungkus dan mengatur arah box
+    </p>
+    <p>Kesimpulan skenario 6 adalah: dengan penambahan kode justify-content, kita dapat mengatur
+        tata letak box sesuai keinginan kita, disini saya memilih center maka segala box yang
+        terdapat pada kelas akan diarahkan ke tengah, berlaku untuk posisi yg lain
+    </p>
+</html>
